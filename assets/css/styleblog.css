@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 70%; /* Reduzi a largura para acomodar a coluna da direita */
+}
+
+.rightcolumn {
+    float: right; /* Adicionado para posicionar a coluna à direita */
+    width: 25%; /* Largura da coluna da direita */
+    margin-left: 5%; /* Adicionado espaço entre as colunas */
+}
+
+.rightcolumn .card {
+    margin-bottom: 20px;
+}
+
+.rightcolumn h2, .rightcolumn h3 {
+    margin-top: 0;
+}
+
+.rightcolumn img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.rightcolumn .card p {
+    text-align: justify;
+}
+
+.rightcolumn .card a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rightcolumn .card a:hover {
+    background-color: #ddd;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}

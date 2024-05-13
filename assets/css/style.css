@@ -617,6 +617,42 @@ body.menu-expanded button path {
   width: 10rem;
 }
 
+/*===== Articles ===============================================*/
+
+#articles header h2 {
+  margin-bottom: 6rem;
+}
+
+#articles .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#articles .card {
+  padding: 2.8rem;
+  text-align: left;
+
+  background: var(--secundary-color);
+
+  border-radius: 0.6rem;
+  box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.267);
+
+  transition: 400ms;
+}
+
+#articles .card:hover {
+  background: var(--third-color);
+}
+
+#articles .card h3 {
+  margin-block: 1.6rem;
+}
+
+#articles .card img {
+  width: 10rem;
+}
+
 /*===== CONTACT ===============================================*/
 
 #contact {
@@ -1144,6 +1180,23 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     width: 30%;
     flex-grow: 1;
   }
+
+    /*===== Articles =====================================*/
+    #articles h2 {
+      width: 49.7rem;
+      margin-inline: auto;
+    }
+  
+    #articles .cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 4rem;
+    }
+  
+    #articles .card {
+      width: 30%;
+      flex-grow: 1;
+    }
   /*===== CONTACT =====================================*/
 
   #contact .wrapper {
